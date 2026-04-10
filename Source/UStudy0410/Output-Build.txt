@@ -1,0 +1,39 @@
+﻿Build started at 오후 1:22...
+1>------ Build started: Project: UStudy0410, Configuration: Development_Editor x64 ------
+1>Using bundled DotNet SDK version: 8.0.412 win-x64
+1>Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UStudy0410Editor Win64 Development -Project="C:\work\UStudy0410\UStudy0410.uproject" -WaitMutex -FromMsBuild -architecture=x64
+1>Log file: C:\Users\Monstera\AppData\Local\UnrealBuildTool\Log.txt
+1>Using 'git status' to determine working set for adaptive non-unity build (C:\work\UStudy0410).
+1>Building UStudy0410Editor...
+1>Using Visual Studio 2022 14.44.35223 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+1>[Upgrade]
+1>[Upgrade] Using backward-compatible include order. The latest version of UE has changed the order of includes, which may require code changes. The current setting is:
+1>[Upgrade]     IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_4
+1>[Upgrade] Suppress this message by setting 'IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_7;' in UStudy0410Editor.Target.cs.
+1>[Upgrade] Alternatively you can set this to 'EngineIncludeOrderVersion.Latest' to always use the latest include order. This will potentially cause compile errors when integrating new versions of the engine.
+1>[Upgrade]
+1>Determining max actions to execute in parallel (6 physical cores, 6 logical cores)
+1>  Executing up to 6 processes, one per physical core
+1>  Requested 1.5 GB memory per action, 3.03 GB available: limiting max parallel actions to 2
+1>Using Unreal Build Accelerator local executor to run 4 action(s)
+1>  Storage capacity 40Gb
+1>---- Starting trace: 260410_132215_vs1748 ----
+1>UbaServer - Listening on 0.0.0.0:1345
+1>[1/4] Compile [x64] MyGameModeBase.cpp
+1>C:\work\UStudy0410\Source\UStudy0410\MyGameModeBase.cpp(8,2): fatal error C1001: Internal compiler error.
+1>(compiler file 'D:\a\_work\1\s\src\vctools\Compiler\CxxFE\sl\p1\c\preprocessor.cpp', line 3758)
+1> To work around this problem, try simplifying or changing the program near the locations listed above.
+1>If possible please provide a repro here: https://developercommunity.visualstudio.com
+1>Please choose the Technical Support command on the Visual C++
+1> Help menu, or open the Technical Support help file for more information
+1>	UE_LOG(LogTemp, Warning, TEXT("??"));
+1>	^
+1>Trace written to file C:/Users/Monstera/AppData/Local/UnrealBuildTool/Log.uba with size 2.9kb
+1>Total time in Unreal Build Accelerator local executor: 0.39 seconds
+1>
+1>Result: Failed (OtherCompilationError)
+1>Total execution time: 1.72 seconds
+1>C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(44,5): error MSB3073: The command ""C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\Build.bat" UStudy0410Editor Win64 Development -Project="C:\work\UStudy0410\UStudy0410.uproject" -WaitMutex -FromMsBuild -architecture=x64" exited with code 6.
+1>Done building project "UStudy0410.vcxproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 오후 1:22 and took 02.124 seconds ==========
